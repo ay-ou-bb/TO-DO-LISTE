@@ -1,3 +1,4 @@
+/* start input to do list */
 body{
     display: flex;
     justify-content: center;
@@ -5,7 +6,7 @@ body{
     height: 100vh;
 }
 main{
-    width: auto;
+    width: 570px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .container-input{
@@ -33,4 +34,18 @@ input{
     align-items: center;
     background-color: rgba(255, 209, 5, 0.952);
     border-radius: 50%;
+}
+/* end input to do list */
+
+.content-todo{
+ display: grid;
+ grid-template-columns: auto 80px 130px 30px 30px;
+ padding: 10px;
+ text-align: center;
+
+}
+.todo-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

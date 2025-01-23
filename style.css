@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    width: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 90px 125px 300px 35px;
+    grid-template-rows: 35px;
+}
+input{
+   padding: 5px; 
+   background-color:rgba(241, 241, 241, 0.986) ;
+   border-radius: 10px;
+   margin: 0 5px ;
+   border: none;
+}
+.icon-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 209, 5, 0.952);
+    border-radius: 50%;
+}

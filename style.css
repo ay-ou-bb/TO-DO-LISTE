@@ -28,6 +28,9 @@ input{
    margin: 0 5px ;
    border: none;
 }
+input:focus{
+outline: 2px solid  rgba(255, 209, 5, 0.952);
+}
 .icon-add{
     display: flex;
     justify-content: center;
@@ -49,9 +52,10 @@ input{
     align-items: center;
     background-color:white;
     border: 2px solid rgba(255, 209, 5, 0.952); ;
-    width: 125px;
+    width: 140px;
     height: 35px;
     border-radius: 10px;
+    font-size: 0.8rem;
     
 }
 .date-today h2{

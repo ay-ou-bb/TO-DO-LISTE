@@ -10,31 +10,27 @@
 <body>
     <main>
         <div class="container-input">
+            <!-- input element  -->
             <h1>TO DO LISTE TEAM 5</h1>
             <div class="content">
-                <input type="time">
-                <input type="date">
-                <input type="text">
-                <div class="icon-add"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></div>
+                <input id="add-time" type="time" >
+                <input id="add-date" type="date" required>
+                <input id="add-text" type="text" required>
+                <div  id="add-todo-to-list" class="icon-add"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></div>
             </div>
         </div>
         <!-- today's date -->
          <div class="date-line">
             <div class="line"></div>
-            <div class="date-today"><h2>23/01/2025</h2></div>
+            <div  class="date-today"><h2 id="dispaly-date"></h2></div>
             <div class="line"></div>
         </div>
-
-        <div class="do-to">
-            <div class="content-todo">
-                <p>Lorem ipsum dolor sit, amet consectetur a</p>
-                <p>12:30</p>
-                <p>30/01/2025</p>
-                <div class="todo-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e86d0c"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></div>
-                <div class="todo-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#48e80c"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-120H200Zm280-360ZM360-360v-170l367-367q12-12 27-18t30-6q16 0 30.5 6t26.5 18l56 57q11 12 17 26.5t6 29.5q0 15-5.5 29.5T897-728L530-360H360Zm481-424-56-56 56 56ZM440-440h56l232-232-28-28-29-28-231 231v57Zm260-260-29-28 29 28 28 28-28-28Z"/></svg></div>
+            <!-- this div for dispaly array to do lista -->
+        <div  id="to-do-lise-array" class="do-to">
             </div>
         </div>
     </main>
-    
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
